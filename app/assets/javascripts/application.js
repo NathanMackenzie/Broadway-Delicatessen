@@ -42,7 +42,7 @@ function headerFade(){
 	
 	header.css('background-color', 'rgba(0, 0, 0, '+alpha/3+')');
 	logo.css('top', negScrollDist + 'px');
-	navScrollAnimate();
+	
 };
 
 
