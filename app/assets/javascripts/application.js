@@ -18,6 +18,7 @@
 
 window.addEventListener('scroll', function(){
 	headerFade();
+
 });
 
 function headerFade(){
@@ -26,30 +27,16 @@ function headerFade(){
 	var offSet = $(document).scrollTop(), opacity = 0;
 	var scrollDist = $(document).scrollTop()
 	var negScrollDist = scrollDist*-1;
-	
+
 	if(offSet >= $(window).height()){
 		alpha = 1;
 	}else if(offSet < $(window).height()){
 		alpha = offSet / $(window).height();
 	}
 
-	if(scrollDist > 75){
-		$('.primary-nav').css('float', 'none');
-	}else{
-		$('.primary-nav').css('float', 'right');
-	}
-	
-	
-	header.css('background-color', 'rgba(0, 0, 0, '+alpha/3+')');
-	logo.css('top', negScrollDist + 'px');
-	
+	header.css('box-shadow', '0px 2px 2px rgba(100, 100, 100, '+alpha+')');
+	//header.css('opacity',alpha);
 };
-
-
-
-
-
-
 
 
 

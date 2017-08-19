@@ -1,6 +1,42 @@
 <%= stylesheet_link_tag    'public', media: 'all', 'data-turbolinks-track' => true %>
-<article class="content">
-	<section id="above-fold">
-		<%= image_tag("store_front.png", class: 'logo')%>
-	</section>
-</article>
+<%= javascript_include_tag 'public', 'data-turbolinks-track': 'reload' %>
+<div class="bgimg-1">
+  <div>
+	<div class="container demo-bg">
+		<div class="business-hours">
+			<h2 class="title">Hours</h2>
+			<ul class="list-unstyled opening-hours">
+				<li>Sunday <span class="pull-right">8:00AM-1:30PM</span></li>
+				<li>Monday <span class="pull-right">7:00AM-2:00PM</span></li>
+				<li>Tuesday <span class="pull-right">7:00AM-2:00PM</span></li>
+				<li>Wednesday <span class="pull-right">7:00AM-2:00PM</span></li>
+				<li>Thursday <span class="pull-right">7:00AM-2:00PM</span></li>
+				<li>Friday <span class="pull-right">7:00AM-2:00PM</span></li>
+				<li>Saturday <span class="pull-right">7:00AM-2:00PM</span></li>
+			</ul>
+		</div>
+	</div>
+  </div>
+</div>
+<div class="menu">
+	<h3 style="text-align:center;">MENU</h3>
+	<div class = "gallergy">
+		<a href="assets/images/breakfast_menu.jpg">
+			<div class="image-wrapper">
+					
+					<img class = "men-img" src="assets/images/breakfast.jpg" width="300" height="300"/>
+				<p>BREAKFAST</p>
+			</div>
+		</a>
+		<a href="assets/images/lunch_menu.jpg">
+			<div class="image-wrapper">
+				<img class = "men-img" src="assets/images/lunch.jpg" width="300" height="300"/>
+				<p>LUNCH</p>
+			</div>
+		</a>
+		<div class="image-wrapper">
+			<img class = "men-img" src="assets/images/specials.jpg" width="300" height="300"/>
+			<p>SPECIALS</p>
+		</div>
+	</div>	
+</div>
