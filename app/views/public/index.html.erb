@@ -2,7 +2,7 @@
 <%= javascript_include_tag 'public', 'data-turbolinks-track': 'reload' %>
 <div class="bgimg-1">
   <div>
-	<div class="container demo-bg">
+	<div class="demo-bg">
 		<div class="business-hours">
 			<h2 class="title">Hours</h2>
 			<ul class="list-unstyled opening-hours">
@@ -22,20 +22,19 @@
 	<h3 style="text-align:center;">MENU</h3>
 	<div class = "gallergy">
 		<a href="assets/images/breakfast_menu.jpg">
-			<div class="image-wrapper">
-					
-					<img class = "men-img" src="assets/images/breakfast.jpg" width="300" height="300"/>
+			<div class="image-wrapper">	
+				<%= image_tag "breakfast.jpg", size: "300x300", class: "men-img"%> 
 				<p>BREAKFAST</p>
 			</div>
 		</a>
 		<a href="assets/images/lunch_menu.jpg">
 			<div class="image-wrapper">
-				<img class = "men-img" src="assets/images/lunch.jpg" width="300" height="300"/>
+				<%= image_tag "lunch.jpg", size: "300x300", class: "men-img"%> 
 				<p>LUNCH</p>
 			</div>
 		</a>
 		<div class="image-wrapper">
-			<img class = "men-img" src="assets/images/specials.jpg" width="300" height="300"/>
+			<%= image_tag "specials.jpg", size: "300x300", class: "men-img"%> 
 			<p>SPECIALS</p>
 		</div>
 	</div>	
