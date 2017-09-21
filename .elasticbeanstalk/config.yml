@@ -1,7 +1,11 @@
 branch-defaults:
   master:
-    environment: null
+    environment: broadway-delicatessen-env
     group_suffix: null
+environment-defaults:
+  broadway-delicatessen-env:
+    branch: null
+    repository: null
 global:
   application_name: broadway_delicatessen
   branch: null
